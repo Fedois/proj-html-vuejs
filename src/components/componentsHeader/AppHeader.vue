@@ -42,22 +42,22 @@ export default {
             </div>
         </div>
 
-        <div class="header-bottom row row-cols-3 p-4">
+        <div class="header-bottom d-flex justify-content-between p-4">
             <div class="logo">
                 <img src="../../assets/cropped-Group-39-2x.png" alt="Phlox | Business">
             </div>
 
             <nav class="text-center">
                 <ul class="m-0 d-flex align-items-center h-100">
-                    <li class="mx-3 text-uppercase" v-for="link in linkNav">
-                        <a href="#" class="text-decoration-none text-dark">{{ link }}</a>
+                    <li class="mx-3" v-for="link in linkNav">
+                        <a href="#" class="text-decoration-none text-dark text-uppercase">{{ link }}</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="purchase text-end">
                 <button class="my-button">purchase</button>
-                <font-awesome-icon class="ms-3" icon="fa-solid fa-magnifying-glass" />
+                <font-awesome-icon class="mx-3" icon="fa-solid fa-magnifying-glass" />
             </div>
         </div>
 

@@ -33,9 +33,13 @@ export default {
 <style lang="scss">
 @use "./main.scss";
 
+// general style
 .my-button{
   border-radius: 50px;
   padding: 10px 30px;
   border: none
+}
+a{
+  text-decoration: none;
 }
 </style>
