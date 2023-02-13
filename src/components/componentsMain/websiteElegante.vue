@@ -5,19 +5,23 @@ export default {
         return{
             listImprove: [
                 {
-                    title: 'Speed optimization',
+                    img: '/src/assets/speed-optimization.png',
+                    title: 'Speed Optimization',
                     info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
                 },
                 {
-                    title: 'Speed optimization',
+                    img: '/src/assets/cloud.png',
+                    title: 'Cloud Solutions',
                     info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
                 },
                 {
-                    title: 'Speed optimization',
+                    img: '/src/assets/ipad-logo.png',
+                    title: 'Website Design',
                     info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
                 },
                 {
-                    title: 'Speed optimization',
+                    img: '/src/assets/cronometro-icon.png',
+                    title: 'Online Marketing',
                     info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
                 },
             ]
@@ -31,12 +35,14 @@ export default {
         <div class="makeSite ps-3 pe-5">
             <h2 class="text-capitalize">We are here to make your website look more elegant and stylish!</h2>
 
-            <div class="line-green d-flex my-4">
-                <div class="lineOne rounded me-2"></div>
-                <div class="lineTwo rounded"></div>
+            <div class="line-green">
+                <div class="lineOne"></div>
+                <div class="lineTwo"></div>
             </div>
 
-            <button class="my-button mt-4">VIEW ALL</button>
+            <button class="my-button mt-4">
+                <a href="#">view all</a>
+            </button>
         </div>
         
         <div class="cards-site">
@@ -44,6 +50,7 @@ export default {
                 <div class="row g-3">
                     <div class="col-6" v-for="card in listImprove">
                         <div class="p-3 border">
+                            <img class="pb-4" :src="card.img" :alt="card.title">
                             <h4>{{ card.title }}</h4>
                             <p>{{ card.info }}</p>
                         </div>
@@ -57,22 +64,8 @@ export default {
 <style lang="scss" scoped>
 .makeSite{
     width: 40%;
-
-    h2{
-        font-size: 2.5em;
-    }
 }
 .cards-site{
     width: 60%;
-}
-.lineOne{
-    background-color: red;
-    height: 5px;
-    width: 15px;
-}
-.lineTwo{
-    background-color: green;
-    height: 5px;
-    width: 40px;
 }
 </style>

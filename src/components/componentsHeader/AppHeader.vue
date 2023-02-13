@@ -8,7 +8,9 @@ export default {
     props: {
         numOne: String,
         numTwo: String,
-        linkNav: Array
+        logo: Object,
+        linkNav: Array,
+        icons: Array
     }
 }
 </script>
@@ -24,18 +26,8 @@ export default {
             <div class="icons">
                 <ul class="m-0">
                     <li class="d-inline-block">
-                        <a class="text-white" href="#">
-                            <font-awesome-icon class="mx-2" icon="fa-brands fa-facebook-f" />
-                        </a>
-                    </li>
-                    <li class="d-inline-block">
-                        <a class="text-white" href="#">
-                            <font-awesome-icon class="mx-2" icon="fa-brands fa-twitter" />
-                        </a>
-                    </li>
-                    <li class="d-inline-block">
-                        <a class="text-white" href="#">
-                            <font-awesome-icon class="mx-2" icon="fa-brands fa-pinterest-p" />
+                        <a class="text-white" href="#" v-for="singleIcon in icons">
+                            <font-awesome-icon class="mx-2" :icon="singleIcon.icon" />
                         </a>
                     </li>
                 </ul>
@@ -44,7 +36,7 @@ export default {
 
         <div class="header-bottom d-flex justify-content-between p-4">
             <div class="logo">
-                <img src="../../assets/cropped-Group-39-2x.png" alt="Phlox | Business">
+                <img :src="logo.img" :alt="logo.nameLogo">
             </div>
 
             <nav class="text-center">
@@ -56,7 +48,9 @@ export default {
             </nav>
 
             <div class="purchase text-end">
-                <button class="my-button">purchase</button>
+                <button class="my-button">
+                    <a href="#">purchase</a>
+                </button>
                 <font-awesome-icon class="mx-3" icon="fa-solid fa-magnifying-glass" />
             </div>
         </div>

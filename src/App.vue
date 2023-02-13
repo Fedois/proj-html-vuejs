@@ -14,6 +14,24 @@ export default {
     return {
       phoneOne: '(001) 88451234',
       phoneTwo: '88455438',
+      logo: {
+        img: '/src/assets/cropped-Group-39-2x.png',
+        nameLogo: 'Phlox | Business'
+      },
+      icons: [
+        {
+          icon: 'fa-brands fa-facebook-f',
+          nameIcon: 'facebook'
+        },
+        {
+          icon: 'fa-brands fa-twitter',
+          nameIcon: 'twitter'
+        },
+        {
+          icon: 'fa-brands fa-pinterest-p',
+          nameIcon: 'pinterest'
+        },
+      ],
       listNav: ['home', 'about', 'service', 'showcase', 'blog', 'contact'],
       quickLinks: ['carreers', 'news', 'terms of use', 'privacy projects', 'about', 'contact'],
     }
@@ -25,6 +43,8 @@ export default {
   <AppHeader 
     :numOne="phoneOne"
     :numTwo="phoneTwo" 
+    :icons="icons"
+    :logo="logo"
     :linkNav="listNav"/>
   <AppMain />
   <AppFooter />
@@ -32,14 +52,4 @@ export default {
 
 <style lang="scss">
 @use "./main.scss";
-
-// general style
-.my-button{
-  border-radius: 50px;
-  padding: 10px 30px;
-  border: none
-}
-a{
-  text-decoration: none;
-}
 </style>

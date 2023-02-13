@@ -15,7 +15,7 @@ export default {
             </p>
 
             <button class="my-button my-5">
-                <a href="#" class="text-dark">READ MORE</a>
+                <a href="#">READ MORE</a>
             </button>
 
             <div class="socialsList d-flex justify-content-between align-items-center">
@@ -27,9 +27,9 @@ export default {
                 </ul>
 
                 <ul class="my-pagination m-0 p-1 border rounded-5">
-                    <li class="py-1 px-4 d-inline-block border rounded-5"><a href="#">1</a></li>
-                    <li class="py-1 px-4 d-inline-block border rounded-5"><a href="#">2</a></li>
-                    <li class="py-1 px-4 d-inline-block border rounded-5"><a href="#">3</a></li>
+                    <li class="d-inline-block py-1 px-4  border rounded-5"><a href="#">1</a></li>
+                    <li class="d-inline-block py-1 px-4  border rounded-5"><a href="#">2</a></li>
+                    <li class="d-inline-block py-1 px-4  border rounded-5"><a href="#">3</a></li>
                 </ul>
             </div>
         </div>
@@ -57,7 +57,7 @@ export default {
             font-size: 5em;
         }
         p{
-            font-size: 2em;
+            font-size: 1.5em;
         }
         .my-pagination{
             font-size: 1.5em;
