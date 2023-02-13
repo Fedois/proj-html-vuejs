@@ -1,6 +1,28 @@
 <script>
 export default {
-    name: 'websiteElegant'
+    name: 'websiteElegant',
+    data (){
+        return{
+            listImprove: [
+                {
+                    title: 'Speed optimization',
+                    info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
+                },
+                {
+                    title: 'Speed optimization',
+                    info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
+                },
+                {
+                    title: 'Speed optimization',
+                    info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
+                },
+                {
+                    title: 'Speed optimization',
+                    info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -20,28 +42,10 @@ export default {
         <div class="cards-site">
             <div class="container">
                 <div class="row g-3">
-                    <div class="col-6">
+                    <div class="col-6" v-for="card in listImprove">
                         <div class="p-3 border">
-                            <h4>Speed optimization</h4>
-                            <p>Far far away, behind the word mountains, far from the countries Vokaia Separated...</p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="p-3 border">
-                            <h4>Speed optimization</h4>
-                            <p>Far far away, behind the word mountains, far from the countries Vokaia Separated...</p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="p-3 border">
-                            <h4>Speed optimization</h4>
-                            <p>Far far away, behind the word mountains, far from the countries Vokaia Separated...</p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="p-3 border">
-                            <h4>Speed optimization</h4>
-                            <p>Far far away, behind the word mountains, far from the countries Vokaia Separated...</p>
+                            <h4>{{ card.title }}</h4>
+                            <p>{{ card.info }}</p>
                         </div>
                     </div>
                 </div>
