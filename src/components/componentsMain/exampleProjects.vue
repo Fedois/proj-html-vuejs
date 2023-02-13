@@ -63,10 +63,28 @@ export default {
         </div>
 
         <div class="example-img">
-            <div class="container-fluid text-center">
+            <div class="container-fluid text-center position-relative">
                 <div class="row row-cols-4 g-1">
-                    <div class="col" v-for="img in listProjects">
-                        <img class="w-100 object-fit-cover" :src="img.img" alt="">
+                    <div class="col" v-for="singleImg in listProjects">
+                        <img class="w-100 object-fit-cover" :src="singleImg.img" alt="">
+                    </div>
+                </div>
+
+                <div class="badge position-absolute bottom-50 end-0">
+                    <div class="browse">
+                        <a class="browse text-start p-2 my-1 rounded-start text-capitalize d-inline-block" href="#">
+                            browse demos
+                        </a>
+                    </div>
+                    <div class="buy">
+                        <a class="browse text-start p-2 my-1 rounded-start text-capitalize d-inline-block" href="#">
+                            buy now!
+                        </a>
+                    </div>
+                    <div class="export">
+                        <a class="browse text-start p-2 my-1 rounded-start text-capitalize d-inline-block" href="#">
+                            export section
+                        </a>
                     </div>
                 </div>
             </div>
@@ -75,5 +93,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+.badge{
+    a{
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        width: 120px;
+        color: white;
+    }
+}
 </style>
