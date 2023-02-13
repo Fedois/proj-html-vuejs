@@ -23,7 +23,8 @@ export default {
                     <div class="lineTwo"></div>
                 </div>
 
-                <p>far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
+                <p>
+                    far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
                     Separated they live in Bookmarkgrow right at the coast of the Semantics, a large language ocean.
                     Separated they live in Bookmarkgrove.
                 </p>
