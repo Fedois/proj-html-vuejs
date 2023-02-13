@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-m
+
 </template>
 
 <style lang="scss" scoped>
