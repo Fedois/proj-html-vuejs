@@ -1,0 +1,80 @@
+<script>
+
+export default {
+    name: 'ourBlog',
+    data (){
+        return{
+            imgPosts: [
+                {
+                    img: '/src/assets/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg',
+                    date: 'May 24, 2018 by Alex',
+                    title: 'Marketing ideas'
+                },
+                {
+                    img: '/src/assets/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg',
+                    date: 'May 24, 2018 by Alex',
+                    title: 'rest during working hours'
+                },
+                {
+                    img: '/src/assets/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg',
+                    date: 'May 24, 2018 by Alex',
+                    title: 'develop your startup idea'
+                },
+            ]
+        }
+    }
+}
+</script>
+
+<template>
+    <section id="Blog">
+        <h2 class="w-50 m-auto text-capitalize text-center">Latest news & our blog</h2>
+
+        <div class="line-green justify-content-center mt-5">
+            <div class="lineOne"></div>
+            <div class="lineTwo"></div>
+        </div>
+
+        <div class="posts my-5">
+            <div class="container-fluid">
+                <div class="row row-cols-3">
+                    <div class="col" v-for="post in imgPosts">
+                        <div class="post position-relative">
+                            <img class="w-100 h-100" :src="post.img" alt="">
+                            <div class="info-post m-auto border position-absolute bg-white p-4 text-capitalize">
+                                <span>{{ post.date }}</span>
+                                <h5 class="align-middle">
+                                    <font-awesome-icon class="circle align-middle" icon="fa-solid fa-circle" />
+                                    {{ post.title }}
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn m-auto w-100">
+            <button class="my-button mt-5">
+                <a href="#">view all</a>
+            </button>
+        </div>
+    </section>
+</template>
+
+<style lang="scss" scoped>
+.post{
+    height: 350px;
+
+    .info-post{
+        width: 90%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+
+        .circle{
+            font-size: 0.5em;
+        }
+    }
+}
+</style>

@@ -3,6 +3,7 @@ import websiteElegant from './websiteElegante.vue'
 import learnMore from './learnMore.vue'
 import exampleProjects from './exampleProjects.vue'
 import phraseClient from './phraseClient.vue'
+import ourBlog from './ourBlog.vue'
 
 export default {
     name: 'AppMain',
@@ -10,7 +11,8 @@ export default {
         websiteElegant,
         learnMore,
         exampleProjects,
-        phraseClient
+        phraseClient,
+        ourBlog
     }
 }
 </script>
@@ -21,6 +23,7 @@ export default {
         <learnMore />
         <exampleProjects />
         <phraseClient />
+        <ourBlog />
     </main>
 </template>
 
