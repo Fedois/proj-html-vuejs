@@ -34,7 +34,7 @@ export default {
             </div>
         </div>
 
-        <div class="header-bottom d-flex justify-content-between p-4">
+        <div class="header-bottom sticky-top bg-white d-flex justify-content-between p-4">
             <div class="logo">
                 <img :src="logo.img" :alt="logo.nameLogo">
             </div>
@@ -66,5 +66,10 @@ export default {
 }
 nav > ul{
     list-style: none;
+
+    a:hover{
+        border-bottom: 3px solid;
+        border-color: var(--text-green);
+    }
 }
 </style>

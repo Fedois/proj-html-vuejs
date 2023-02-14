@@ -5,6 +5,9 @@ a{
 h2{
   font-size: 2.5em;
 }
+.my-text-green{
+    color: var(--text-green);
+}
 
 // button style
 .my-button{
@@ -12,11 +15,19 @@ h2{
     padding: 10px 30px;
     border: none;
     text-transform: uppercase;
-    background: rgb(0,12,11);
-    background: linear-gradient(270deg, rgba(0,12,11,1) 32%, rgba(51,51,51,1) 89%);
+    background: var(--gradient-black);
+    transition: background-color 3s;
     
     a{
-        color: white;
+        color: var(--text-gray-3);
+    }
+
+    &:hover{
+        background: var(--gradient-green);
+        
+        a{
+            color: white;
+        }
     }
 }
 
@@ -27,16 +38,15 @@ h2{
 
     > *{
         border-radius: 50px;
+        background: var(--gradient-green);
     }
 
     .lineOne{
         margin-right: 5px;
-        background-color: green;
         height: 5px;
         width: 10px;
     }
     .lineTwo{
-        background-color: green;
         height: 5px;
         width: 50px;
     }
