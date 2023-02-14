@@ -47,7 +47,9 @@ export default {
                         <form action="">
                             <div class="my-input-group d-flex align-items-center mt-5">
                                 <input type="email" class="p-2 ps-4 w-100" placeholder="Enter Your Email Andress">
-                                <span class="d-inline-block text-dark text-center pe-4 ms-3">SUBMIT</span>
+                                <button type="submit" class="d-inline-block text-center pe-4 ms-3">
+                                    SUBMIT
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -58,7 +60,7 @@ export default {
                         <p>what are you waiting for?</p>
                         <h2 class="mb-5">Let's Talk About Work</h2>
 
-                        <button class="my-button">
+                        <button class="my-button border">
                             <a href="#">start now</a>
                         </button>
                     </div>
@@ -83,29 +85,32 @@ export default {
     height: 300px;
 }
 .new-pro{
-    background: rgb(0,12,11);
-    background: linear-gradient(270deg, rgba(0,12,11,1) 32%, rgba(51,51,51,1) 89%);
+    background: var(--gradient-black);
 
     .my-input-group{
     width: 70%;
     margin: auto;
     border-radius: 50px;
-    background-color: white;
+    background-color: var(--text-gray-2);
 
     input{
         border: none;
         border-radius: 50px;
         outline: none;
+        background-color: transparent;
+        color: white;
     }
-    span{
+    button{
         font-size: 0.8em;
-        background-color: white;
+        background-color: transparent;
+        color: var(--text-gray-3);
+        border: none;
         border-radius: 0 50px 50px 0;
     }
 
     }
 }
 .work{
-    background-color: green;
+    background: var(--gradient-green)
 }
 </style>

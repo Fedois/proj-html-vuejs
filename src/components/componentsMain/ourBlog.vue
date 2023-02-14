@@ -57,7 +57,7 @@ export default {
 
         <div class="d-flex justify-content-center">
             <button class="my-button mt-5">
-                <a href="#">view all</a>
+                <a href="#">view all post</a>
             </button>
         </div>
     </section>

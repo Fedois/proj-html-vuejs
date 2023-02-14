@@ -42,7 +42,7 @@ export default {
             <nav class="text-center">
                 <ul class="m-0 d-flex align-items-center h-100">
                     <li class="mx-3" v-for="link in linkNav">
-                        <a href="#" class="text-decoration-none text-dark text-uppercase">{{ link }}</a>
+                        <a href="#" class="text-decoration-none text-uppercase">{{ link }}</a>
                     </li>
                 </ul>
             </nav>
@@ -66,6 +66,10 @@ export default {
 }
 nav > ul{
     list-style: none;
+
+    a{
+        color: var(--text-gray-1);
+    }
 
     a:hover{
         border-bottom: 3px solid;

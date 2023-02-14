@@ -21,7 +21,7 @@ export default {
                 </div>
                 </div>
                 <div class="col links-foot">
-                <div class="p-3 text-uppercase">
+                <div class="p-3">
                     <h4>quick links</h4>
 
                     <div class="line-green">
@@ -86,8 +86,20 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+h4{
+    text-transform: uppercase;
+}
 ul{
     list-style: none;
+
+    * {
+        color: var(--text-gray-1);
+    }
+
+    a:hover{
+        border-bottom: 3px solid var(--text-green);
+        color: var(--text-gray-1);
+    }
 }
 .map-img{
     height: 200px;
