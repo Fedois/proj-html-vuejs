@@ -1,12 +1,31 @@
 <script>
 export default {
-    name: 'Jumbotron'
+    name: 'Jumbotron',
+    data (){
+        return{
+            currentSlide: 0,
+            jumboImgs: [
+                {
+                    img: '/src/assets/Group-36-2x.png',
+                    num: 1
+                },
+                {
+                    img: '/src/assets/Group-35-2x.png',
+                    num: 2
+                },
+                {
+                    img: '/src/assets/Group-40-2x.png',
+                    num: 3
+                },
+            ]
+        }
+    }
 }
 </script>
 
 <template>
-    <div class="jumbotron position-relative">
-        <div class="title position-absolute">
+    <div class="jumbotron d-flex">
+        <div class="title-jumbo ms-5 d-flex flex-column justify-content-center">
             <span>17 years of experience</span>
             <h1 class="text-capitalize">we are a <br> design agency</h1>
             <p>far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
@@ -26,16 +45,16 @@ export default {
                     <li class="text-uppercase d-inline-block">- twitter</li>
                 </ul>
 
-                <ul class="my-pagination m-0 p-1 border rounded-5">
-                    <li class="d-inline-block py-1 px-4  border rounded-5"><a href="#">1</a></li>
-                    <li class="d-inline-block py-1 px-4  border rounded-5"><a href="#">2</a></li>
-                    <li class="d-inline-block py-1 px-4  border rounded-5"><a href="#">3</a></li>
+                <ul class="my-pagination p-1 border rounded-5">
+                    <li class="d-inline-block" v-for="(slide, index) in jumboImgs">
+                        <span @click="currentSlide = index" class="py-1 px-4 border rounded-5" :class="{'active' : currentSlide == index}">{{ slide.num }}</span>
+                    </li>
                 </ul>
             </div>
         </div>
     
         <div class="jumbo-img">
-            <img class="position-absolute" src="../../assets/Group-36-2x.png" alt="">
+            <img :src="jumboImgs[currentSlide].img" alt="d">
         </div>
     </div>
 </template>
@@ -44,11 +63,8 @@ export default {
 .jumbotron{
     background-color: lightgray;
     overflow: hidden;
-    height: 1000px;
 
-    .title{
-        width: 40%;
-        margin: 150px;
+    .title-jumbo{
 
         span{
             font-size: 1.5em;
@@ -59,17 +75,22 @@ export default {
         p{
             font-size: 1.5em;
         }
+        .my-button{
+            width: 150px;
+        }
         .my-pagination{
             font-size: 1.5em;
+
+            .active{
+               background-color: green
+            }
         }
     }
     .jumbo-img{
-        width: 60%;
+        width: 50%;
 
          > img{
-        width: 70%;
-        top: -5%;    
-        right: -10%;
+            width: 1000px;
     }
     }
 }
