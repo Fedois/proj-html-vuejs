@@ -4,13 +4,16 @@ export default {
     props: {
         logo: Object,
         quickLinks: Array,
+        contacts: Array,
+        map: String,
+        icons: Array
     }
 }
 </script>
 
 <template>
     <footer>
-        <div class="links-foot container-fluid">
+        <div class="list-foot container-fluid mb-5">
             <div class="row row-cols-4">
                 <div class="col logo-foot">
                 <div class="p-3">
@@ -33,19 +36,72 @@ export default {
                     </ul>
                 </div>
                 </div>
+                
                 <div class="col contacts-foot">
-                <div class="p-3">Row column</div>
+                <div class="p-3">
+                    <h4>contacts</h4>
+
+                    <div class="line-green">
+                        <div class="lineOne"></div>
+                        <div class="lineTwo"></div>
+                    </div>
+
+                    <ul class="links p-0">
+                        <li class="m-0" v-for="info in contacts">
+                            <p>{{ info.street }}</p>
+                            <p>{{ info.email }}</p>
+                            <p>{{ info.number }}</p>
+                        </li>
+                    </ul>
+
+                </div>
                 </div>
                 <div class="col map-foot">
-                <div class="p-3">Row column</div>
+                <div class="p-3">
+                    <h4>location on map</h4>
+
+                    <div class="line-green">
+                        <div class="lineOne"></div>
+                        <div class="lineTwo"></div>
+                    </div>
+
+                    <div class="map-img">
+                        <img class="w-100 h-100" :src="map" alt="">
+                    </div>
+                </div>
                 </div>
             </div>
-</div>
+        </div>
+
+        <div class="bottom-foot p-4 d-flex justify-content-between align-items-center text-white">
+            <p class="text-uppercase m-0">2020 phlox business theme.</p>
+
+            <div class="icons-social">
+                <a href="#" v-for="singleIcon in icons">
+                    <font-awesome-icon class="mx-2 text-white" :icon="singleIcon.icon" />
+                </a>
+            </div>
+        </div>
     </footer>
 </template>
 
 <style lang="scss" scoped>
 ul{
     list-style: none;
+}
+.map-img{
+    height: 200px;
+
+    img{
+        object-fit: contain;
+    }
+}
+.bottom-foot{
+    background: rgb(0,12,11);
+    background: linear-gradient(270deg, rgba(0,12,11,1) 32%, rgba(51,51,51,1) 89%);
+
+    > *{
+        font-size: 0.8em;
+    }
 }
 </style>

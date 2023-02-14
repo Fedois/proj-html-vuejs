@@ -19,6 +19,7 @@ export default {
         img: '/src/assets/cropped-Group-39-2x.png',
         nameLogo: 'Phlox | Business'
       },
+      
       icons: [
         {
           icon: 'fa-brands fa-facebook-f',
@@ -33,8 +34,17 @@ export default {
           nameIcon: 'pinterest'
         },
       ],
+      
       listNav: ['home', 'about', 'service', 'showcase', 'blog', 'contact'],
       quickLinks: ['carreers', 'news', 'terms of use', 'privacy projects', 'about', 'contact'],
+      contacts: [
+        {
+          street: 'Patricia C. Amedee 4401 Waldeck Street grapevine nashville, TX 76051',
+          email: 'info@yourdomain.com',
+          number: '+99 (0) 101 0000 888'
+        }
+      ],
+      map: '/src/assets/map.png'
     }
   }
 }
@@ -52,7 +62,10 @@ export default {
   
   <AppFooter
   :logo="logo"
-  :quickLinks="quickLinks" />
+  :quickLinks="quickLinks"
+  :contacts="contacts"
+  :map="map"
+  :icons="icons" />
 </template>
 
 <style lang="scss">
