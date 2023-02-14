@@ -47,8 +47,12 @@ export default {
     :icons="icons"
     :logo="logo"
     :linkNav="listNav"/>
+  
   <AppMain />
-  <AppFooter />
+  
+  <AppFooter
+  :logo="logo"
+  :quickLinks="quickLinks" />
 </template>
 
 <style lang="scss">
