@@ -31,7 +31,7 @@ export default {
 </script>
 
 <template>
-    <section class="website d-flex justify-content-between">
+    <section id="website" class="d-flex justify-content-between">
         <div class="makeSite ps-3 pe-5">
             <h2 class="text-capitalize">We are here to make your website look more elegant and stylish!</h2>
 
@@ -49,10 +49,15 @@ export default {
             <div class="container">
                 <div class="row g-3">
                     <div class="col-6" v-for="card in listImprove">
-                        <div class="p-3 border">
-                            <img class="pb-4" :src="card.img" :alt="card.title">
-                            <h4>{{ card.title }}</h4>
-                            <p>{{ card.info }}</p>
+                        <div class="p-4 border">
+                            <div class="img-icon mb-4">
+                                <img :src="card.img" :alt="card.title">
+                            </div>
+
+                            <div class="info-card">
+                                <h4>{{ card.title }}</h4>
+                                <p class="mb-0">{{ card.info }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,5 +72,12 @@ export default {
 }
 .cards-site{
     width: 60%;
+
+    .img-icon{
+        height: 50px;
+        > img{
+            width: 50px;
+        }
+    }
 }
 </style>

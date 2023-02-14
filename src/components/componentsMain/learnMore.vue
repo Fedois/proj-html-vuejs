@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section class="learnMore d-flex alig-items-center">
+    <section id="learn" class="d-flex alig-items-center">
         <div class="learn-sx w-50">
             <div class="learn-img position-relative">
                 <img class="back-img w-100" src="../../assets/busy-architect-PYVKWM4-1024x872.jpg" alt="busy-architect">

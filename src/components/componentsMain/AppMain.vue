@@ -2,13 +2,15 @@
 import websiteElegant from './websiteElegante.vue'
 import learnMore from './learnMore.vue'
 import exampleProjects from './exampleProjects.vue'
+import phraseClient from './phraseClient.vue'
 
 export default {
     name: 'AppMain',
     components: {
         websiteElegant,
         learnMore,
-        exampleProjects
+        exampleProjects,
+        phraseClient
     }
 }
 </script>
@@ -18,6 +20,7 @@ export default {
         <websiteElegant />
         <learnMore />
         <exampleProjects />
+        <phraseClient />
     </main>
 </template>
 

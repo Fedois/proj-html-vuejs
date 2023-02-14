@@ -35,7 +35,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="projects">
         <div class="text-project">
             <div class="container-fluid d-flex mb-5">
                 <div class="title w-50">
