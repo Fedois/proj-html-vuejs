@@ -10,13 +10,16 @@ export default {
             <div class="learn-img position-relative">
                 <img class="back-img w-100" src="../../assets/busy-architect-PYVKWM4-1024x872.jpg" alt="busy-architect">
                 <div class="bg-up position-absolute top-0 start-0 end-0 bottom-0"></div>
-                <img class="img-busWoman w-100 position-absolute" src="../../assets/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
+                <img class="img-busWoman w-100 position-absolute rounded-4" src="../../assets/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
             </div>
         </div>
 
         <div class="learn-dx w-50">
             <div class="text-learn">
-                <h2 class="h-100 align-middle">Learn more about our missions</h2>
+                <h2 class="h-100 align-middle">
+                    learn more about our
+                    <span class="my-text-green">missions</span>
+                </h2>
 
                 <div class="line-green">
                     <div class="lineOne"></div>
@@ -46,8 +49,13 @@ export default {
         width: 500px;
         height: 500px;
     }
+    .back-img{
+        border-radius: 0 40px 40px 0;
+    }
     .bg-up{
-        background-color: rgba($color: green, $alpha: 0.8);
+        background: var(--gradient-green);
+        opacity: 0.8;
+        border-radius: 0 40px 40px 0
     }
     .img-busWoman{
         top: 15%;
@@ -58,6 +66,7 @@ export default {
 }
 .learn-dx{
     margin: auto 0;
+    color: var(--text-gray-1);
 
     .text-learn{
         width: 500px;

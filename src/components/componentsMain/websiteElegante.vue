@@ -5,22 +5,22 @@ export default {
         return{
             listImprove: [
                 {
-                    img: '/src/assets/speed-optimization.png',
+                    icon: 'fa-solid fa-gauge-high',
                     title: 'Speed Optimization',
                     info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
                 },
                 {
-                    img: '/src/assets/cloud.png',
+                    icon: 'fa-solid fa-cloud',
                     title: 'Cloud Solutions',
                     info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
                 },
                 {
-                    img: '/src/assets/ipad-logo.png',
+                    icon: 'fa-solid fa-tablet-screen-button',
                     title: 'Website Design',
                     info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
                 },
                 {
-                    img: '/src/assets/cronometro-icon.png',
+                    icon: 'fa-solid fa-stopwatch',
                     title: 'Online Marketing',
                     info: 'Far far away, behind the word mountains, far from the countries Vokaia Separated...'
                 },
@@ -33,7 +33,12 @@ export default {
 <template>
     <section id="website" class="d-flex justify-content-between">
         <div class="makeSite ps-3 pe-5">
-            <h2 class="text-capitalize">We are here to make your website look more elegant and stylish!</h2>
+            <h2 class="text-capitalize">We are here to make your 
+                <span class="my-text-green">website</span> 
+                look more
+                <span class="my-text-green">elegant</span> 
+                and stylish!
+            </h2>
 
             <div class="line-green">
                 <div class="lineOne"></div>
@@ -49,9 +54,9 @@ export default {
             <div class="container">
                 <div class="row g-3">
                     <div class="col-6" v-for="card in listImprove">
-                        <div class="p-4 border">
-                            <div class="img-icon mb-4">
-                                <img :src="card.img" :alt="card.title">
+                        <div class="my-box p-4 border">
+                            <div class="icon mb-4">
+                                <font-awesome-icon :icon="card.icon" />
                             </div>
 
                             <div class="info-card">
@@ -67,17 +72,24 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
 .makeSite{
     width: 40%;
 }
 .cards-site{
     width: 60%;
 
-    .img-icon{
-        height: 50px;
-        > img{
-            width: 50px;
-        }
+    p{
+        color: var(--text-gray-1);
+    }
+
+    .my-box:hover{
+        cursor: pointer;
+        background: var(--gradient-green);
+    }
+
+    .icon{
+        font-size: 3em;
     }
 }
 </style>

@@ -40,9 +40,10 @@ export default {
                 <div class="row row-cols-3">
                     <div class="col" v-for="post in imgPosts">
                         <div class="post position-relative">
-                            <img class="w-100 h-100" :src="post.img" alt="">
-                            <div class="info-post m-auto border position-absolute bg-white p-4 text-capitalize">
+                            <img class="w-100 h-100 rounded" :src="post.img" alt="">
+                            <div class="info-post m-auto border rounded position-absolute bg-white p-4 text-capitalize">
                                 <span>{{ post.date }}</span>
+                                
                                 <h5 class="align-middle">
                                     <font-awesome-icon class="circle align-middle" icon="fa-solid fa-circle" />
                                     {{ post.title }}
@@ -54,7 +55,7 @@ export default {
             </div>
         </div>
 
-        <div class="btn m-auto w-100">
+        <div class="d-flex justify-content-center">
             <button class="my-button mt-5">
                 <a href="#">view all</a>
             </button>
@@ -72,8 +73,13 @@ export default {
         left: 50%;
         transform: translate(-50%, 50%);
 
+        span{
+            color: var(--text-gray-2);
+        }
+
         .circle{
             font-size: 0.5em;
+            color: var(--text-green);
         }
     }
 }

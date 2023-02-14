@@ -49,7 +49,9 @@ export default {
             <div class="socialsList d-flex justify-content-between align-items-center">
                 <ul class="m-0 p-0">
                     <li class="text-uppercase d-inline-block me-2" v-for="social in listSocial">
-                       <strong> - {{ social }}</strong> 
+                       <strong>
+                            - <a href="#"> {{ social }}</a>
+                       </strong> 
                     </li>
                 </ul>
 
@@ -84,8 +86,15 @@ export default {
             font-size: 1.5em;
             color: var(--text-gray-1);
         }
+        strong > a{
+            color: black;
+
+            &:hover{
+                background: var(--gradient-green);
+            }
+        }
         .my-button{
-            width: 150px;
+            width: 170px;
         }
         .my-pagination{
             font-size: 1.5em;

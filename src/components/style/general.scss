@@ -1,4 +1,8 @@
+
 // GENERAL
+*{
+    font-family: 'Convergence', sans-serif;
+}
 a{
   text-decoration: none;
 }
@@ -20,6 +24,7 @@ h2{
     
     a{
         color: var(--text-gray-3);
+        vertical-align: middle;
     }
 
     &:hover{
