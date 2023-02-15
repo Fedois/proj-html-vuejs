@@ -28,6 +28,7 @@ export default {
 
 <template>
     <section id="Blog">
+        <!-- titel news and blog -->
         <h2 class="w-50 m-auto text-capitalize text-center">Latest news & our blog</h2>
 
         <div class="line-green justify-content-center mt-5">
@@ -35,6 +36,7 @@ export default {
             <div class="lineTwo"></div>
         </div>
 
+        <!-- all posts -->
         <div class="posts my-5">
             <div class="container-fluid">
                 <div class="row row-cols-3">
@@ -55,6 +57,7 @@ export default {
             </div>
         </div>
 
+        <!-- button -->
         <div class="d-flex justify-content-center">
             <button class="my-button mt-5">
                 <a href="#">view all post</a>
@@ -66,14 +69,14 @@ export default {
 <style lang="scss" scoped>
 .post{
     height: 350px;
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+    box-shadow: var(--shadow-black);
 
     .info-post{
         width: 90%;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 50%);
-        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+        box-shadow: var(--shadow-black);
 
         span{
             color: var(--text-gray-4);

@@ -26,6 +26,8 @@ export default {
 
 <template>
     <div id="jumbotron" class="d-flex">
+        
+        <!-- title jumbo -->
         <div class="title-jumbo ms-5 d-flex flex-column justify-content-center">
             <span class="my-text-green text-uppercase">17 years of experience</span>
             
@@ -62,7 +64,8 @@ export default {
                 </ul>
             </div>
         </div>
-    
+
+        <!-- jumbo img -->
         <div class="jumbo-img">
             <img :src="jumboImgs[currentSlide].img" alt="d">
         </div>

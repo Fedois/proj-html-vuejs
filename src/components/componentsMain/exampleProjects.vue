@@ -37,6 +37,8 @@ export default {
 <template>
     <section id="projects">
         <div class="text-project">
+            
+            <!-- title project -->
             <div class="container-fluid d-flex mb-5">
                 <div class="title w-50">
                     <div class="line-green">
@@ -67,6 +69,7 @@ export default {
             </div>
         </div>
 
+        <!-- images projects -->
         <div class="example-imgs">
             <div class="container-fluid position-relative">
                 <div class="row row-cols-4 g-1">
@@ -81,6 +84,7 @@ export default {
                     </div>
                 </div>
 
+                <!-- badge -->
                 <div class="badge position-absolute text-end bottom-50 end-0">
                     <div class="browse">
                         <a class="browse text-start p-2 my-1 rounded-start text-capitalize d-inline-block" href="#">
@@ -104,6 +108,7 @@ export default {
             </div>
         </div>
 
+        <!-- button read more -->
         <div class="text-center mt-5">
             <button class="my-button mt-5">
                 <a href="#">read more</a>

@@ -39,6 +39,8 @@ export default {
     <section id="new-project">
         <div class="container-fluid text-center">
             <div class="row row-cols-2">
+
+                <!-- container sx -->
                 <div class="col">
                     <div class="p-5 new-pro text-white">
                         <p>Are you ready?</p>
@@ -53,6 +55,7 @@ export default {
                     </div>
                 </div>
                 
+                <!-- container dx -->
                 <div class="col">
                     <div class="p-5 work">
                         <p>what are you waiting for?</p>
@@ -66,6 +69,7 @@ export default {
             </div>
         </div>
 
+        <!-- images sponsor -->
         <div class="container-fluid mt-5 sponsor-imgs text-center">
             <div class="row row-cols-6 align-items-center">
                 <div class="col mt-5" v-for="singleImg in listSponsor">
@@ -114,9 +118,8 @@ export default {
     p{
         color: var(--text-gray-3);
     }
-
     .my-button{
-        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.5);
+        box-shadow: var(--shadow-black);
     }
 }
 </style>

@@ -6,6 +6,7 @@ export default {
 
 <template>
     <section id="learn" class="d-flex alig-items-center">
+        <!-- content sx -->
         <div class="learn-sx w-50">
             <div class="learn-img position-relative">
                 <img class="back-img w-100" src="../../assets/busy-architect-PYVKWM4-1024x872.jpg" alt="busy-architect">
@@ -14,6 +15,7 @@ export default {
             </div>
         </div>
 
+        <!-- content dx -->
         <div class="learn-dx w-50">
             <div class="text-learn">
                 <h2 class="h-100 align-middle">

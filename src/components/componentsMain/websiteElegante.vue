@@ -32,6 +32,7 @@ export default {
 
 <template>
     <section id="website" class="d-flex justify-content-between">
+        <!-- content sx -->
         <div class="makeSite ps-3 pe-5">
             <h2 class="text-capitalize">We are here to make your 
                 <span class="my-text-green">website</span> 
@@ -50,6 +51,7 @@ export default {
             </button>
         </div>
         
+        <!-- content dx -->
         <div class="cards-site">
             <div class="container">
                 <div class="row g-4">

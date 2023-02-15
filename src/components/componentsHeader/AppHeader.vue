@@ -17,6 +17,7 @@ export default {
 
 <template>
     <header>
+        <!-- inizio top header -->
         <div class="top-header text-white py-2 px-5 d-flex justify-content-between align-items-center">
             <div class="number">
                 <p class="m-0 me-4 d-inline-block">{{ numOne }}</p>
@@ -34,6 +35,7 @@ export default {
             </div>
         </div>
 
+        <!-- inizio header navigation -->
         <div class="header-bottom bg-white d-flex justify-content-between p-4">
             <div class="logo">
                 <img :src="logo.img" :alt="logo.nameLogo">
