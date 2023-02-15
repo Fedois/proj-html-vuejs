@@ -136,6 +136,7 @@ img{
 }
 }
 .badge{
+    z-index: 30;
     a{
         background-color: rgba($color: #000000, $alpha: 0.5);
         width: 120px;
