@@ -115,7 +115,7 @@ ul{
     background: rgb(0,12,11);
     background: linear-gradient(270deg, rgba(0,12,11,1) 32%, rgba(51,51,51,1) 89%);
 
-    > *{
+    p{
         font-size: 0.8em;
         color: var(--text-gray-4);
     }
