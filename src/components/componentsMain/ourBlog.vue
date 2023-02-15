@@ -41,10 +41,10 @@ export default {
                     <div class="col" v-for="post in imgPosts">
                         <div class="post position-relative">
                             <img class="w-100 h-100 rounded" :src="post.img" alt="">
-                            <div class="info-post m-auto border rounded position-absolute bg-white p-4 text-capitalize">
+                            <div class="info-post m-auto rounded position-absolute bg-white p-4 text-capitalize">
                                 <span>{{ post.date }}</span>
                                 
-                                <h5 class="align-middle">
+                                <h5 class="align-middle mt-1">
                                     <font-awesome-icon class="circle align-middle" icon="fa-solid fa-circle" />
                                     {{ post.title }}
                                 </h5>
@@ -66,15 +66,18 @@ export default {
 <style lang="scss" scoped>
 .post{
     height: 350px;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
 
     .info-post{
         width: 90%;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 50%);
+        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
 
         span{
-            color: var(--text-gray-2);
+            color: var(--text-gray-4);
+            font-size: 0.8em;
         }
 
         .circle{

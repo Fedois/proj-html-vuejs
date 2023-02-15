@@ -10,7 +10,7 @@ export default {
         <div class="up-cover h-100 w-100 text-center d-flex justify-content-center align-items-center">
             <div class="text-client w-50 m-auto text-white">
                 <p class="quote my-text-green"><font-awesome-icon icon="fa-solid fa-quote-left" /></p>
-                <p class="phrase">
+                <p class="phrase mt-4">
                     <em>
                         When it comes to barbequing, there are two main schools of thought for
                         the techniques thath you can use. Freshly scrambled eggs with applewood smoked bacon - are amazing!
@@ -19,7 +19,7 @@ export default {
 
                 <div class="client-img mt-5">
                     <img src="../../assets/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="">
-                    <h3 class="mt-2 my-text-green">LISSA DURBIN</h3>
+                    <h3 class="mt-4 mb-0 my-text-green">LISSA DURBIN</h3>
                     <span>Client</span>
                 </div>
             </div>
@@ -41,8 +41,9 @@ export default {
             font-size: 3em;
         }
         .phrase{
-            font-size: 1.8em;
+            font-size: 1.5em;
             color: var(--text-gray-3);
+            line-height: 50px;
         }
         .client-img > img{
             width: 100px;

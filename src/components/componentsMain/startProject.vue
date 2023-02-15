@@ -46,7 +46,7 @@ export default {
 
                         <form action="">
                             <div class="my-input-group d-flex align-items-center mt-5">
-                                <input type="email" class="p-2 ps-4 w-100" placeholder="Enter Your Email Andress">
+                                <input type="email" class="py-3 ps-4 w-100" placeholder="Enter Your Email Andress">
                                 <button type="submit" class="d-inline-block text-center pe-4 ms-3">
                                     SUBMIT
                                 </button>
@@ -58,9 +58,9 @@ export default {
                 <div class="col">
                     <div class="p-5 work">
                         <p>what are you waiting for?</p>
-                        <h2 class="mb-5">Let's Talk About Work</h2>
+                        <h2 class="mb-5 text-white">Let's Talk About Work</h2>
 
-                        <button class="my-button border">
+                        <button class="my-button">
                             <a href="#">start now</a>
                         </button>
                     </div>
@@ -87,6 +87,10 @@ export default {
 .new-pro{
     background: var(--gradient-black);
 
+    p{
+    color: var(--text-gray-4);
+    }
+
     .my-input-group{
     width: 70%;
     margin: auto;
@@ -111,6 +115,14 @@ export default {
     }
 }
 .work{
-    background: var(--gradient-green)
+    background: var(--gradient-green);
+
+    p{
+        color: var(--text-gray-3);
+    }
+
+    .my-button{
+        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.5);
+    }
 }
 </style>

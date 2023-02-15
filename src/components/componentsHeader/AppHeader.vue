@@ -62,7 +62,7 @@ export default {
 
 <style lang="scss" scoped>
 .top-header{
-    background-color: black;
+    background-color: var(--bg-gray-2);
 }
 nav > ul{
     list-style: none;

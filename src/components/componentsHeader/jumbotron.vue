@@ -27,7 +27,7 @@ export default {
 <template>
     <div class="jumbotron d-flex">
         <div class="title-jumbo ms-5 d-flex flex-column justify-content-center">
-            <span class="my-text-green">17 years of experience</span>
+            <span class="my-text-green text-uppercase">17 years of experience</span>
             
             <h1 class="text-capitalize">we are a <br> designe <span class="my-text-green">agency</span> </h1>
 
@@ -55,7 +55,7 @@ export default {
                     </li>
                 </ul>
 
-                <ul class="my-pagination p-1 border rounded-5">
+                <ul class="my-pagination p-1 rounded-5">
                     <li class="d-inline-block" v-for="(slide, index) in jumboImgs">
                         <span @click="currentSlide = index" class="py-1 px-3 rounded-5" :class="{'active' : currentSlide == index}">{{ slide.num }}</span>
                     </li>
@@ -76,22 +76,20 @@ export default {
 
     .title-jumbo{
 
-        > span{
-            font-size: 1.5em;
+        > span, p{
+            font-size: 1em;
         }
-        h1{
+        > span{
+            letter-spacing: 10px;
+        }
+        > h1{
             font-size: 5em;
         }
-        p{
-            font-size: 1.5em;
+        > p{
             color: var(--text-gray-1);
         }
         strong > a{
             color: black;
-
-            &:hover{
-                background: var(--gradient-green);
-            }
         }
         .my-button{
             width: 170px;
@@ -100,6 +98,7 @@ export default {
             font-size: 1.5em;
             background: var(--gradient-black);
             color: var(--text-gray-3);
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.78);
 
 
             &:hover{

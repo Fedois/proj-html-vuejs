@@ -18,6 +18,10 @@ export default {
                 <div class="col logo-foot">
                 <div class="p-3">
                     <img :src="logo.img" :alt="logo.nameLogo">
+                    <p class="mt-4">
+                        While the lovely valley teems vith vapour around me, and the meridian sun strikes the upper surface of the impenetrble foliage of my trees.
+                        While the lovely valley teems with vapour arond me.
+                    </p>
                 </div>
                 </div>
                 <div class="col links-foot">
@@ -30,7 +34,7 @@ export default {
                     </div>
 
                     <ul class="links p-0">
-                        <li class="m-0" v-for="link in quickLinks">
+                        <li class="m-0 text-uppercase py-1" v-for="link in quickLinks">
                             <a href="#">{{ link }}</a>
                         </li>
                     </ul>
@@ -46,11 +50,11 @@ export default {
                         <div class="lineTwo"></div>
                     </div>
 
-                    <ul class="links p-0">
-                        <li class="m-0" v-for="info in contacts">
-                            <p>{{ info.street }}</p>
-                            <p>{{ info.email }}</p>
-                            <p>{{ info.number }}</p>
+                    <ul class="p-0">
+                        <li v-for="info in contacts">
+                            <p class="py-2">{{ info.street }}</p>
+                            <p class="py-2">{{ info.email }}</p>
+                            <p class="py-2">{{ info.number }}</p>
                         </li>
                     </ul>
 
@@ -86,15 +90,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.list-foot *{
+    color: var(--text-gray-1);
+}
 h4{
     text-transform: uppercase;
 }
 ul{
     list-style: none;
-
-    * {
-        color: var(--text-gray-1);
-    }
 
     a:hover{
         border-bottom: 3px solid var(--text-green);
@@ -114,6 +117,7 @@ ul{
 
     > *{
         font-size: 0.8em;
+        color: var(--text-gray-4);
     }
 }
 </style>

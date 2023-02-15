@@ -52,9 +52,9 @@ export default {
         
         <div class="cards-site">
             <div class="container">
-                <div class="row g-3">
+                <div class="row g-4">
                     <div class="col-6" v-for="card in listImprove">
-                        <div class="my-box p-4 border">
+                        <div class="my-box p-4 mb-2 rounded-3">
                             <div class="icon mb-4">
                                 <font-awesome-icon :icon="card.icon" />
                             </div>
@@ -72,7 +72,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 .makeSite{
     width: 40%;
 }
@@ -82,10 +81,15 @@ export default {
     p{
         color: var(--text-gray-1);
     }
+    .my-box{
+        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+        transition: all 0.3s;
+    }
 
     .my-box:hover{
         cursor: pointer;
         background: var(--gradient-green);
+        transform: scale(1.01);
     }
 
     .icon{

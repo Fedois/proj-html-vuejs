@@ -97,12 +97,21 @@ export default {
                 </div>
             </div>
         </div>
+
+        <div class="text-center mt-5">
+            <button class="my-button mt-5">
+                <a href="#">read more</a>
+            </button>
+        </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
 .example-imgs{
     overflow: hidden;
+}
+img{
+    transition: all 0.2s;
 }
 img:hover{
     cursor: pointer;
