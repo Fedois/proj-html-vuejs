@@ -44,12 +44,10 @@ export default {
                         <p>Are you ready?</p>
                         <h2>Start a New Project</h2>
 
-                        <form action="">
+                        <form action="#">
                             <div class="my-input-group d-flex align-items-center mt-5">
                                 <input type="email" class="py-3 ps-4 w-100" placeholder="Enter Your Email Andress">
-                                <button type="submit" class="d-inline-block text-center pe-4 ms-3">
-                                    SUBMIT
-                                </button>
+                                <input type="submit" value="SUBMIT" class="my-submit d-inline-block text-center pe-4 ms-3">
                             </div>
                         </form>
                     </div>
@@ -104,12 +102,8 @@ export default {
         background-color: transparent;
         color: white;
     }
-    button{
+    .my-submit{
         font-size: 0.8em;
-        background-color: transparent;
-        color: var(--text-gray-3);
-        border: none;
-        border-radius: 0 50px 50px 0;
     }
 
     }

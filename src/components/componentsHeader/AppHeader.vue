@@ -34,7 +34,7 @@ export default {
             </div>
         </div>
 
-        <div class="header-bottom sticky-top bg-white d-flex justify-content-between p-4">
+        <div class="header-bottom bg-white d-flex justify-content-between p-4">
             <div class="logo">
                 <img :src="logo.img" :alt="logo.nameLogo">
             </div>
@@ -61,6 +61,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+header > div:not(#jumbotron){
+  position: sticky;
+  top: 0;
+}
 .top-header{
     background-color: var(--bg-gray-2);
 }

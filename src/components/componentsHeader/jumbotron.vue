@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-    <div class="jumbotron d-flex">
+    <div id="jumbotron" class="d-flex">
         <div class="title-jumbo ms-5 d-flex flex-column justify-content-center">
             <span class="my-text-green text-uppercase">17 years of experience</span>
             
@@ -70,7 +70,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.jumbotron{
+#jumbotron{
     background-color: var(--bg-gray-1);
     overflow: hidden;
 
