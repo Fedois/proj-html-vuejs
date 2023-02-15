@@ -29,7 +29,7 @@ export default {
         <div class="title-jumbo ms-5 d-flex flex-column justify-content-center">
             <span class="my-text-green text-uppercase">17 years of experience</span>
             
-            <h1 class="text-capitalize">we are a <br> designe <span class="my-text-green">agency</span> </h1>
+            <h1 class="text-capitalize">we are a <br> design <span class="my-text-green">agency</span> </h1>
 
             <div class="line-green">
                 <div class="lineOne"></div>

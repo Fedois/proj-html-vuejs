@@ -24,6 +24,7 @@ h2{
     background: var(--gradient-black);
     transition: 0.3s;
     
+    
     a{
         color: var(--text-gray-3);
         font-size: 0.8em;
@@ -32,6 +33,7 @@ h2{
     &:hover{
         background: var(--gradient-green);
         transform: scale(1.1);
+        box-shadow: 0px 0px 36px 0px rgba(173,255,24,0.75), 0px 21px 50px -26px rgba(62,255,111,0.55);
         
         a{
             color: white;
@@ -59,3 +61,4 @@ h2{
         width: 50px;
     }
 }
+        
