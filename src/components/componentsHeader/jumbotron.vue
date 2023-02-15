@@ -98,7 +98,7 @@ export default {
             font-size: 1.5em;
             background: var(--gradient-black);
             color: var(--text-gray-3);
-            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.78);
+            box-shadow: var(--shadow-black);
 
 
             &:hover{

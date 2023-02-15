@@ -10,4 +10,8 @@
     // gradient 
     --gradient-black: linear-gradient(270deg, rgba(0,12,11,1) 32%, rgba(51,51,51,1) 89%);
     --gradient-green: linear-gradient(270deg, rgba(167,195,34,1) 17%, rgba(45,253,128,1) 85%);
+
+    // shadow
+    --shadow-black: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    --shadow-green: 0px 0px 36px 0px rgba(173,255,24,0.75), 0px 21px 50px -26px rgba(62,255,111,0.55);
 }

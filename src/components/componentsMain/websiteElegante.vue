@@ -82,7 +82,7 @@ export default {
         color: var(--text-gray-1);
     }
     .my-box{
-        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+        box-shadow: var(--shadow-black);
         transition: all 0.3s;
     }
 
@@ -90,6 +90,7 @@ export default {
         cursor: pointer;
         background: var(--gradient-green);
         transform: scale(1.01);
+        box-shadow: var(--shadow-green);
     }
 
     .icon{

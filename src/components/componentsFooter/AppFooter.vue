@@ -98,11 +98,6 @@ h4{
 }
 ul{
     list-style: none;
-
-    a:hover{
-        border-bottom: 3px solid var(--text-green);
-        color: var(--text-gray-1);
-    }
 }
 .map-img{
     height: 200px;
