@@ -46,7 +46,7 @@ export default {
 
                         <form action="#">
                             <div class="my-input-group d-flex align-items-center mt-5">
-                                <input type="email" class="py-3 ps-4 w-100" placeholder="Enter Your Email Andress">
+                                <input type="email" class="py-3 ps-4 w-100" placeholder="Enter Your Email Andress" required>
                                 <input type="submit" value="SUBMIT" class="my-submit d-inline-block text-center pe-4 ms-3">
                             </div>
                         </form>
