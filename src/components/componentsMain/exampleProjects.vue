@@ -71,7 +71,13 @@ export default {
             <div class="container-fluid position-relative">
                 <div class="row row-cols-4 g-1">
                     <div class="col" v-for="singleImg in listProjects">
-                        <img class="w-100 object-fit-cover" :src="singleImg.img" :alt="singleImg.img">
+                        <div class="img-pro position-relative">
+                            <img class="w-100 object-fit-cover" :src="singleImg.img" :alt="singleImg.img">
+                        
+                            <div class="up-img d-none position-absolute top-0 start-0 bottom-0 end-0">
+            
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -113,10 +119,21 @@ export default {
 img{
     transition: all 0.2s;
 }
-img:hover{
-    cursor: pointer;
+.up-img{
+    background: var(--gradient-green);
+    opacity: 0.5;
+}
+.img-pro{
+    transition: all 0.5s;
+
+    &:hover{
     transform: scale(1.2);
-    opacity: 0.8;
+    z-index: 30;
+    .up-img{
+        cursor: pointer;
+        display: block !important;
+    }
+}
 }
 .badge{
     a{
